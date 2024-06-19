@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas de Personajes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+body {
+            background-image: url("Assets/Fondos/Fondo\ principal.jpg"); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Cubrir toda la pantalla */
+            background-repeat: no-repeat; /* No repetir la imagen */
+            background-attachment: fixed; /* Fondo fijo mientras se desplaza */
+            color: white; /* Texto en color blanco para contrastar con el fondo */
+        }
+
+        .card-custom {
+            width: 18%; /* Aproximadamente 1/5 del contenedor, ajustable según necesidad */
+            margin: 1%; /* Espacio entre tarjetas */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+            border: 2px solid #ffffff; /* Borde blanco */
+        }
+        .card-custom img {
+            width: 100%;
+            height: auto;
+        }
+        .card-custom .card-body {
+            background-color: black; /* Fondo negro */
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <audio id="myAudio" autoplay>
+        <source src="Assets/Audio/OST.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Tarjeta 1 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Acheron.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Acheron</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 2 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Argenti.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Argenti</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 3 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Aventurine.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Aventurine</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 4 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Bailu.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Bailu</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 5 -->
+            <div class="card-custom">
+                <img src="Assets/Img/BlackSwan.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Black Swan</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 6 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Blade.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Blade</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 7 -->
+            <div class="card-custom">
+                <a href="boothill.html">
+                    <img src="Assets/Img/Boothill.png" class="card-img-top" alt="Imagen">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Boothill</h5>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarjeta 8 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Bronya.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Bronya</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 9 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Clara.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Clara</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 10 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Dr.Ratio.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Dr Ratio</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 11 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Firefly.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Firefly</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 12 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Fuxuan.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Fu Xuan</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 13 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Gepard.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Gepard</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 14 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Himeko.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Himeko</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 15 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Huohuo.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Huohuo</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 16 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Imbibitor Lunae.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Imbibitor Lunae</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 17 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Jade.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Jade</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 18 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Jingliu.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Jingliu</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 19 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Jingyuan.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Jing Yuan</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 20 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Kafka.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Kafka</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 21 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Luocha.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Luocha</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 22 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Robin.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Robin</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 23 -->
+            <div class="card-custom">
+                <a href="ruanmei.html">
+                    <img src="Assets/Img/Ruan mei.png" class="card-img-top" alt="Imagen">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Ruan Mei</h5>
+                    </div>
+                </a>
+            </div>
+            
+            
+            
+            <!-- Tarjeta 24 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Seele.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Seele</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 25 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Sparkle.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Sparkle</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 26 -->
+            <div class="card-custom">
+                <img src="Assets/Img/SilverWolf.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Silver Wolf</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 27 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Topaz.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Topaz</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 28 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Trailblazer.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Trailblazer</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 29 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Trailblazer (Fire).png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Trailblazer (Fire)</h5>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 30 -->
+            <div class="card-custom">
+                <img src="Assets/Img/Trailblazer (Imaginary).png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Trailblazer (Imaginary)</h5>
+                </div>
+            </div>
+
+            <div class="card-custom">
+                <img src="Assets/Img/Welt.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Welt</h5>
+                </div>
+            </div>
+
+            <div class="card-custom">
+                <img src="Assets/Img/Yanqing.png" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Yanqing</h5>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas de Personajes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("Assets/Fondos/Fondo principal.jpg"); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Cubrir toda la pantalla */
+            background-repeat: no-repeat; /* No repetir la imagen */
+            background-attachment: fixed; /* Fondo fijo mientras se desplaza */
+            color: white; /* Texto en color blanco para contrastar con el fondo */
+            display: flex; /* Para alinear la imagen y el contenido */
+            justify-content: center; /* Centrar contenido horizontalmente */
+            align-items: center; /* Centrar contenido verticalmente */
+            height: 100vh; /* Ajustar altura al tamaño de la ventana */
+            position: relative; /* Posición relativa para facilitar posicionamiento absoluto */
+            font-family: Arial, sans-serif; /* Familia de fuentes */
+        }
+
+        .left-image {
+            width: 700px; /* Ancho de la imagen */
+            height: 700px; /* Alto de la imagen */
+            margin-bottom: 100px; /* Espacio debajo de la imagen */
+            margin-right: 20px; /* Espacio a la derecha de la imagen */
+            position: relative; /* Posición relativa para ajustar elementos hijos */
+        }
+
+        .rectangulo-pequeno {
+            position: absolute; /* Posición absoluta para estar sobre la imagen */
+            bottom: 50px; /* Alineación a 50px desde la parte inferior */
+            left: 250px; /* Alineación a 250px desde la izquierda */
+            width: 250px; /* Ancho del rectángulo */
+            height: 100px; /* Alto del rectángulo */
+            background-color: black; /* Color de fondo */
+            border: 2px solid white; /* Borde blanco */
+            color: white; /* Texto en color blanco */
+            font-size: 20px; /* Tamaño de fuente */
+            padding: 10px; /* Espaciado interno */
+            display: flex; /* Alinear elementos en una fila */
+            flex-direction: row; /* Mostrar elementos en fila */
+            justify-content: flex-start; /* Distribuir horizontalmente */
+            align-items: center; /* Alinear verticalmente al centro */
+        }
+
+        .rectangulo-pequeno p {
+            margin-bottom: 0; /* Eliminar margen inferior del párrafo */
+        }
+
+        .rectangulo-pequeno img {
+            margin-left: 10px; /* Espacio a la izquierda de la imagen */
+            width: 60px; /* Ancho de la imagen */
+            height: 60px; /* Alto de la imagen */
+            border-radius: 50%; /* Borde redondeado */
+            border: 2px solid white; /* Borde blanco */
+        }
+
+        .black-square {
+            position: absolute; /* Posición absoluta para estar sobre la imagen */
+            top: 50%; /* Alineación vertical centrada */
+            left: calc(50% + 300px); /* Alineación horizontal a 400px a la derecha de la imagen */
+            transform: translate(-50%, -50%); /* Ajuste para centrar el cuadrado */
+            width: 1000px; /* Ancho del cuadrado */
+            height: 900px; /* Alto del cuadrado */
+            background-color: black; /* Color de fondo negro */
+            border: 2px solid white; /* Borde blanco */
+            overflow: hidden; /* Ocultar contenido que se desborda */
+            display: flex; /* Alinear elementos en una fila */
+            flex-direction: column; /* Mostrar elementos en columna */
+            justify-content: flex-start; /* Distribuir verticalmente */
+            align-items: flex-start; /* Alinear a la izquierda */
+            padding: 20px; /* Espaciado interno */
+        }
+
+        .black-square img {
+            position: absolute; /* Posición absoluta para estar dentro del cuadrado */
+            bottom: 20px; /* Alineación a unos 100px más arriba de la esquina inferior */
+            right: 20px;
+            width: 100px; /* Ancho de la imagen */
+            height: auto; /* Alto ajustado automáticamente */
+            border-radius: 50%; /* Borde redondeado */
+            border: 2px solid white; /* Borde blanco */
+        }
+
+        .go-back-button {
+            position: absolute; /* Posición absoluta */
+            top: 20px; /* Alineación desde la parte superior */
+            left: 20px; /* Alineación desde la izquierda */
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+            border: 2px solid white; /* Borde blanco */
+            padding: 10px 20px; /* Espaciado interno */
+            font-size: 16px; /* Tamaño de fuente */
+            cursor: pointer; /* Cambio de cursor al pasar el mouse */
+            z-index: 1000; /* Z-index para estar encima de otros elementos */
+            text-decoration: none; /* Quitar subrayado de enlace */
+        }
+
+        .go-back-button:hover {
+            background-color: white; /* Fondo blanco al pasar el mouse */
+            color: black; /* Texto negro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Enlace "Go back" que redirige a index.html -->
+    <a href="index.html" class="go-back-button">Go back</a>
+
+    <img src="Assets/Renders/Ruanmei.webp" alt="" class="left-image">
+    
+    <!-- Rectángulo pequeño debajo de la imagen -->
+    <div class="rectangulo-pequeno">
+        <p style="margin-bottom: 5px;">Role: Support</p>
+        <img src="Assets/Vias/Armonia.png" alt="">
+    </div>
+    
+    <!-- Cuadrado negro -->
+    <div class="black-square">
+        <div style="color: white; font-size: 20px; padding: 20px;">
+            <p>Best Lightcones:</p>
+            <ol>
+                <li>Past Self in Mirror 5★</li>
+                <li>Memories of the Past 4★ [S5]</li>
+                <li>Meshing Cogs 3★ [S5]</li>
+                <li>Planetary Rendezvous 4★</li>
+            </ol>
+            <p>Relic set:</p>
+            <ol>
+                <li>2-PC: Thief / Watchmaker + Messenger Traversing Hackerspace</li>
+                <li>4-PC: Thief of Shooting Meteor</li>
+            </ol>
+            <p>Planar Ornament:</p>
+            <ol>
+                <li>Penacony, Land of the Dreams</li>
+                <li>Sprightly Vonwacq</li>
+                <li>Fleet of the Ageless</li>
+                <li>~~ Broken Keel</li>
+            </ol>
+            <p>Main stats:</p>
+            <ol>
+                <li>Chest: HP% / DEF%</li>
+                <li>Boots: Speed</li>
+                <li>Orb: HP% / DEF%</li>
+                <li>Rope: ERR%</li>
+            </ol>
+            <p>Talent priority:</p>
+            <ol>
+                <li>Skill</li>
+                <li>~ Ultimate</li>
+                <li>Talent</li>
+                <li>Basic ATK</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <audio id="myAudio" autoplay>
+        <source src="Assets/Audio/OST.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Scripts de Bootstrap y jQuery necesarios -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
